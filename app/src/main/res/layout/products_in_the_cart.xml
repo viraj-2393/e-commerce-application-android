@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:orientation = "vertical"
+    android:id = "@+id/strips_container"
+    >
+    <!--product #1 -->
+    <LinearLayout
+        android:id = "@+id/strips"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "horizontal"
+        android:padding = "10dp"
+        android:background = "@drawable/roundstrip"
+        >
+        <ImageView
+            android:id = "@+id/cart_product_1"
+            android:layout_height = "80dp"
+            android:layout_width  = "0dp"
+            android:src = "@drawable/nike_cart1"
+            android:layout_weight = "1"
+            android:adjustViewBounds="true"
+            />
+        <LinearLayout
+            android:id = "@+id/product_related_info_in_cart"
+            android:layout_height = "match_parent"
+            android:layout_width = "0dp"
+            android:layout_weight = "2"
+            android:orientation = "vertical"
+            android:padding = "5dp"
+            >
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "FlexibleX Shoes"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "Running Shoes"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "$180.00"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id = "@+id/item_quantity"
+            android:layout_height = "match_parent"
+            android:layout_width = "0dp"
+            android:layout_weight = "1"
+            android:orientation = "vertical"
+            >
+                <ImageButton
+                    android:id = "@+id/plus"
+                    android:layout_height = "0dp"
+                    android:layout_width = "wrap_content"
+                    android:layout_weight = "2"
+                    android:src = "@drawable/plus"
+                    android:layout_gravity = "center"
+                    android:scaleType = "fitCenter"
+                    android:backgroundTint = "#0a0a0a"
+                    android:onClick = "increase_quantity"
+                    />
+                <TextView
+                    android:id = "@+id/no_of_products"
+                    android:layout_height = "0dp"
+                    android:layout_width = "wrap_content"
+                    android:layout_weight = "1"
+                    android:text = "1"
+                    android:textColor = "#0a0a0a"
+                    android:textStyle = "bold"
+                    android:textSize = "15sp"
+                    android:layout_gravity = "center"
+                    android:gravity = "center"
+                    />
+                <ImageButton
+                    android:id = "@+id/minus"
+                    android:layout_height = "0dp"
+                    android:layout_width = "wrap_content"
+                    android:layout_weight = "2"
+                    android:src = "@drawable/minus"
+                    android:layout_gravity  = "center"
+                    android:scaleType = "fitCenter"
+                    android:onClick = "decrease_quantity"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+    <!--product #1 ends-->
+
+    <!--product #2 -->
+    <LinearLayout
+        android:id = "@+id/strips2"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "horizontal"
+        android:padding = "10dp"
+        android:background = "@drawable/roundstrip"
+        android:layout_marginTop = "10dp"
+        >
+        <ImageView
+            android:id = "@+id/cart_product_2"
+            android:layout_height = "80dp"
+            android:layout_width  = "0dp"
+            android:src = "@drawable/nike_cart2"
+            android:layout_weight = "1"
+            android:adjustViewBounds="true"
+            />
+        <LinearLayout
+            android:id = "@+id/product_related_info_in_cart2"
+            android:layout_height = "match_parent"
+            android:layout_width = "0dp"
+            android:layout_weight = "2"
+            android:orientation = "vertical"
+            android:padding = "5dp"
+            >
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "Air MaxX Shoes"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "Training Shoes"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "$380.00"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id = "@+id/item_quantity2"
+            android:layout_height = "match_parent"
+            android:layout_width = "0dp"
+            android:layout_weight = "1"
+            android:orientation = "vertical"
+            >
+            <ImageButton
+                android:id = "@+id/plus2"
+                android:layout_height = "0dp"
+                android:layout_width = "wrap_content"
+                android:layout_weight = "2"
+                android:src = "@drawable/plus"
+                android:layout_gravity = "center"
+                android:scaleType = "fitCenter"
+                android:backgroundTint = "#0a0a0a"
+                android:onClick = "increase_quantity"
+                />
+            <TextView
+                android:id = "@+id/no_of_products2"
+                android:layout_height = "0dp"
+                android:layout_width = "wrap_content"
+                android:layout_weight = "1"
+                android:text = "1"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:layout_gravity = "center"
+                android:gravity = "center"
+                />
+            <ImageButton
+                android:id = "@+id/minus2"
+                android:layout_height = "0dp"
+                android:layout_width = "wrap_content"
+                android:layout_weight = "2"
+                android:src = "@drawable/minus"
+                android:layout_gravity  = "center"
+                android:scaleType = "fitCenter"
+                android:onClick = "decrease_quantity"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!--product #2 ends-->
+
+    <!--product #3-->
+    <LinearLayout
+        android:id = "@+id/strips3"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "horizontal"
+        android:padding = "10dp"
+        android:background = "@drawable/roundstrip"
+        android:layout_marginTop = "10dp"
+        >
+        <ImageView
+            android:id = "@+id/cart_product_3"
+            android:layout_height = "80dp"
+            android:layout_width  = "0dp"
+            android:src = "@drawable/nike_cart3"
+            android:layout_weight = "1"
+            android:adjustViewBounds="true"
+            />
+        <LinearLayout
+            android:id = "@+id/product_related_info_in_cart3"
+            android:layout_height = "match_parent"
+            android:layout_width = "0dp"
+            android:layout_weight = "2"
+            android:orientation = "vertical"
+            android:padding = "5dp"
+            >
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "Air MaxX Shoes"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "Training Shoes"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+            <TextView
+                android:layout_height = "0dp"
+                android:layout_width = "match_parent"
+                android:layout_weight = "1"
+                android:text = "$380.00"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:gravity = "center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id = "@+id/item_quantity3"
+            android:layout_height = "match_parent"
+            android:layout_width = "0dp"
+            android:layout_weight = "1"
+            android:orientation = "vertical"
+            >
+            <ImageButton
+                android:id = "@+id/plus3"
+                android:layout_height = "0dp"
+                android:layout_width = "wrap_content"
+                android:layout_weight = "2"
+                android:src = "@drawable/plus"
+                android:layout_gravity = "center"
+                android:scaleType = "fitCenter"
+                android:backgroundTint = "#0a0a0a"
+                android:onClick = "increase_quantity"
+                />
+            <TextView
+                android:id = "@+id/no_of_products3"
+                android:layout_height = "0dp"
+                android:layout_width = "wrap_content"
+                android:layout_weight = "1"
+                android:text = "1"
+                android:textColor = "#0a0a0a"
+                android:textStyle = "bold"
+                android:textSize = "15sp"
+                android:layout_gravity = "center"
+                android:gravity = "center"
+                />
+            <ImageButton
+                android:id = "@+id/minus3"
+                android:layout_height = "0dp"
+                android:layout_width = "wrap_content"
+                android:layout_weight = "2"
+                android:src = "@drawable/minus"
+                android:layout_gravity  = "center"
+                android:scaleType = "fitCenter"
+                android:onClick = "decrease_quantity"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!--product #3 ends-->
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage"
+    tools:ignore="HardcodedText">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:background = "#F6F6F5"
+    >
+
+    <LinearLayout
+        android:id = "@+id/profile_info"
+        android:layout_height = "0dp"
+        android:layout_width = "match_parent"
+        android:layout_weight = "5"
+        android:orientation = "vertical"
+        android:background="@drawable/roundprofile"
+        >
+        <LinearLayout
+            android:id = "@+id/profile_header"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal"
+            android:padding = "20dp"
+            >
+            <ImageButton
+                android:id = "@+id/menu_icon_white"
+                android:layout_height = "25dp"
+                android:layout_width = "0dp"
+                android:src = "@drawable/menu_white"
+                android:scaleType = "fitCenter"
+                android:background = "#0a0a0a"
+                android:layout_gravity = "center"
+                android:layout_weight = "1"
+                />
+            <TextView
+                android:id = "@+id/my_account_text"
+                android:layout_height = "wrap_content"
+                android:layout_width = "0dp"
+                android:text = "My Account"
+                android:textSize = "22sp"
+                android:textColor = "#ffffff"
+                android:layout_weight = "8"
+                android:layout_gravity = "center"
+                android:layout_marginLeft = "10dp"
+                />
+            <ImageButton
+                android:id = "@+id/search_icon_white"
+                android:layout_height = "wrap_content"
+                android:layout_width = "0dp"
+                android:src = "@drawable/search_white"
+                android:scaleType = "fitCenter"
+                android:background = "#0a0a0a"
+                android:layout_gravity = "center"
+                android:layout_weight = "1"
+                />
+            <ImageButton
+                android:id = "@+id/cart_icon_white"
+                android:layout_height = "wrap_content"
+                android:layout_width = "0dp"
+                android:src = "@drawable/cart_white"
+                android:scaleType = "fitCenter"
+                android:background = "#0a0a0a"
+                android:layout_gravity = "center"
+                android:layout_weight = "1"
+                android:layout_marginLeft = "10dp"
+                />
+        </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile_pic"
+                    android:layout_gravity = "center"/>
+                <TextView
+                    android:text = "Steve Rogers"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity = "center"
+                    android:textColor = "#ffffff"
+                    android:textSize = "20sp"
+                    android:layout_marginTop = "20dp"
+                    />
+                <TextView
+                    android:text = "(555) 555-1234"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity = "center"
+                    android:textColor = "#ffffff"
+                    android:textSize = "12sp"
+                    android:layout_marginTop = "50dp"
+                    />
+                <RelativeLayout
+                    android:id = "@+id/email_id_holder"
+                    android:layout_height = "wrap_content"
+                    android:layout_width = "match_parent"
+                    >
+                    <TextView
+                        android:id = "@+id/email"
+                        android:text = "iamsteve101@gmail.com"
+                        android:layout_height = "wrap_content"
+                        android:layout_width = "match_parent"
+                        android:textColor = "#ffffff"
+                        android:gravity = "center"
+
+                        />
+                     <ImageButton
+                         android:layout_alignRight = "@id/email"
+                         android:layout_width = "20dp"
+                         android:layout_height = "20dp"
+                         android:scaleType = "fitCenter"
+                         android:src = "@drawable/pencil"
+                         android:background = "#0a0a0a"
+                         android:layout_marginRight = "50dp"
+                         />
+                </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/order_related_details"
+        android:layout_height = "0dp"
+        android:layout_width = "match_parent"
+        android:layout_weight = "4.3"
+        android:orientation = "vertical"
+        android:background = "#F6F6F6"
+        >
+        <ScrollView
+            android:id = "@+id/orders_strip"
+            android:layout_height = "match_parent"
+            android:layout_width = "match_parent"
+            android:padding = "10dp"
+            android:layout_marginTop = "10dp"
+            android:scrollbars = "none"
+            >
+
+            <include
+                android:layout_height = "wrap_content"
+                android:layout_width = "match_parent"
+                layout = "@layout/ordered_strip"
+                />
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/profile_page_footer"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "0.7"
+        android:orientation = "horizontal"
+        >
+        <include
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            layout = "@layout/footer_menu"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!--this the navigation view which draws
+        and shows the navigation drawer-->
+    <!--include the menu created in the menu folder-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu" />
+ </androidx.drawerlayout.widget.DrawerLayout>

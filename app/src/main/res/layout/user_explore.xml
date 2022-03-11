@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context = ".ProfilePage"
+    android:orientation = "vertical"
+    >
+    <!--explorable contents section starts from here-->
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundlayout"
+        android:padding = "5dp"
+        >
+        <ImageView
+            android:id = "@+id/product_image"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:src = "@drawable/nike_one"
+            android:adjustViewBounds="true"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/price_and_other_stuff"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:orientation = "horizontal"
+        android:padding = "10dp"
+        android:background = "@drawable/roundlayout"
+        android:layout_marginTop = "1dp"
+        android:layout_marginBottom = "20dp"
+        >
+        <ImageButton
+            android:id = "@+id/comment"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/comments"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "4dp"
+            />
+        <ImageButton
+            android:id = "@+id/add_to_cart"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/add_to_cart"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+        <ImageButton
+            android:id = "@+id/heart_the_product"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/like"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+    </LinearLayout>
+
+    <!--explorable section ends here-->
+
+
+    <!--explorable contents section starts from here-->
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundlayout"
+        android:padding = "5dp"
+        >
+        <ImageView
+            android:id = "@+id/product_image2"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:src = "@drawable/nike_two"
+            android:adjustViewBounds="true"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/price_and_other_stuff2"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:orientation = "horizontal"
+        android:padding = "10dp"
+        android:background = "@drawable/roundlayout"
+        android:layout_marginTop = "1dp"
+        android:layout_marginBottom = "20dp"
+        >
+        <ImageButton
+            android:id = "@+id/comment2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/comments"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "4dp"
+            />
+        <ImageButton
+            android:id = "@+id/add_to_cart2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/add_to_cart"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+        <ImageButton
+            android:id = "@+id/heart_the_product2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/like"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+    </LinearLayout>
+
+    <!--explorable section ends here-->
+
+
+    <!--explorable contents section starts from here-->
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundlayout"
+        android:padding = "5dp"
+        >
+        <ImageView
+            android:id = "@+id/product_image3"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:src = "@drawable/nike_three"
+            android:adjustViewBounds="true"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/price_and_other_stuff3"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:orientation = "horizontal"
+        android:padding = "10dp"
+        android:background = "@drawable/roundlayout"
+        android:layout_marginTop = "1dp"
+        android:layout_marginBottom = "20dp"
+        >
+        <ImageButton
+            android:id = "@+id/comment3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/comments"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "4dp"
+            />
+        <ImageButton
+            android:id = "@+id/add_to_cart3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/add_to_cart"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+        <ImageButton
+            android:id = "@+id/heart_the_product3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/like"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+    </LinearLayout>
+
+    <!--explorable section ends here-->
+
+
+    <!--explorable contents section starts from here-->
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundlayout"
+        android:padding = "5dp"
+        >
+        <ImageView
+            android:id = "@+id/nike_four"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:src = "@drawable/nike_four"
+            android:adjustViewBounds="true"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/price_and_other_stuff4"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:orientation = "horizontal"
+        android:padding = "10dp"
+        android:background = "@drawable/roundlayout"
+        android:layout_marginTop = "1dp"
+        android:layout_marginBottom = "20dp"
+        >
+        <ImageButton
+            android:id = "@+id/comment4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/comments"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "4dp"
+            />
+        <ImageButton
+            android:id = "@+id/add_to_cart4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/add_to_cart"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+        <ImageButton
+            android:id = "@+id/heart_the_product4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_gravity = "center"
+            android:src = "@drawable/like"
+            android:scaleType = "fitCenter"
+            android:background = "#F6F6F6"
+            android:padding = "3dp"
+            />
+    </LinearLayout>
+
+    <!--explorable section ends here-->
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shoosy</string>
+    <string name="just_do_it">Just Do It</string>
+    <string name="shop">Shop</string>
+    <string name="todo">TODO</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:orientation = "horizontal"
+    >
+    <ImageButton
+        android:id = "@+id/home_button"
+        android:layout_width = "0dp"
+        android:layout_height = "25dp"
+        android:layout_weight = "1"
+        android:src = "@drawable/home"
+        android:background = "#F6F6F6"
+        android:scaleType = "fitCenter"
+        android:layout_gravity = "center"
+        />
+
+    <ImageButton
+        android:id = "@+id/explore_button"
+        android:layout_width = "0dp"
+        android:layout_height = "25dp"
+        android:layout_weight = "1"
+        android:src = "@drawable/explore"
+        android:scaleType = "fitCenter"
+        android:background = "#F6F6F6"
+        android:layout_gravity = "center"
+        />
+    <ImageButton
+        android:id = "@+id/heart_button"
+        android:layout_width = "0dp"
+        android:layout_height = "25dp"
+        android:layout_weight = "1"
+        android:src = "@drawable/heart"
+        android:background = "#F6F6F6"
+        android:scaleType = "fitCenter"
+        android:layout_gravity = "center"
+        />
+    <ImageButton
+        android:id = "@+id/profile_button"
+        android:layout_width = "0dp"
+        android:layout_height = "25dp"
+        android:layout_weight = "1"
+        android:src = "@drawable/user"
+        android:background = "#F6F6F6"
+        android:scaleType = "fitCenter"
+        android:layout_gravity = "center"
+        />
+
+</LinearLayout>

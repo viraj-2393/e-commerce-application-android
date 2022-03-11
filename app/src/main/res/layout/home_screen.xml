@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "vertical"
+        >
+
+          <RelativeLayout
+              android:id = "@+id/head_wrapper"
+              android:layout_width = "match_parent"
+              android:layout_height = "0dp"
+              android:padding = "20dp"
+              android:layout_weight = "2.5"
+              >
+              <ImageButton
+                  android:id = "@+id/menu_icon"
+                  android:layout_height = "25dp"
+                  android:layout_width = "25dp"
+                  android:src = "@drawable/menu"
+                  android:layout_alignParentLeft = "true"
+                  android:scaleType = "fitXY"
+                  android:background = "#ffffff"
+                  />
+              <ImageButton
+                  android:id = "@+id/cart_icon"
+                  android:layout_height = "25dp"
+                  android:layout_width = "25dp"
+                  android:src = "@drawable/cart"
+                  android:layout_alignParentRight = "true"
+                  android:scaleType = "fitXY"
+                  android:background = "#ffffff"
+                  />
+              <LinearLayout
+                  android:id = "@+id/search_bar_container"
+                  android:orientation = "horizontal"
+                  android:layout_width = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:background = "@drawable/roundlayout"
+                  android:layout_below = "@id/menu_icon"
+                  android:layout_marginTop = "15dp"
+                  android:paddingLeft = "10dp"
+                  android:paddingRight = "10dp"
+                  android:paddingTop = "5dp"
+                  android:paddingBottom = "5dp"
+                  >
+                  <ImageView
+                      android:id = "@+id/search_bar"
+                      android:layout_height = "18dp"
+                      android:layout_width = "18dp"
+                      android:src = "@drawable/search"
+                      android:layout_gravity = "center"
+                      />
+                   <EditText
+                       android:id = "@+id/enter_search_content"
+                       android:layout_height = "wrap_content"
+                       android:layout_width = "match_parent"
+                       android:hint = "search"
+                       android:padding = "8dp"
+                       android:background="#00000000"
+                       android:inputType = "text"
+                       android:textColor = "#CCCCCC"
+                       />
+              </LinearLayout>
+
+              <!--project brands section starts here-->
+
+          </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/brands_scroller"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scrollbars="none">
+
+                <include
+                    layout="@layout/brands_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </HorizontalScrollView>
+            <!--project brands section ends here-->
+
+            <!--product exploring section starts from here-->
+            <ScrollView
+                android:id = "@+id/product_scroll_view"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:paddingLeft = "20dp"
+                android:paddingRight = "20dp"
+                android:scrollbars = "none"
+                android:layout_weight = "8.5"
+
+                >
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/products" />
+
+            </ScrollView>
+            <!--project exploring section ends here-->
+
+            <!--footer menu starts here-->
+            <LinearLayout
+                android:id = "@+id/footer_menu"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:orientation = "horizontal"
+                android:background = "#F6F6F6"
+                android:layout_weight = "1"
+                android:padding = "10dp"
+                >
+
+                <include
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    layout = "@layout/footer_menu"
+                    />
+            </LinearLayout>
+            <!--footer menu ends here-->
+    </LinearLayout>
+
+
+
+    <!--this the navigation view which draws
+        and shows the navigation drawer-->
+    <!--include the menu created in the menu folder-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

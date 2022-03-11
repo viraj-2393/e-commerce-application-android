@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context = ".ProfilePage"
+    android:orientation = "vertical"
+    >
+    <!--my orders strips section starts from here-->
+    <LinearLayout
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundstrip"
+        android:padding = "10dp"
+        >
+        <TextView
+            android:text = "My Orders"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "20sp"
+            />
+        <LinearLayout
+            android:layout_height = "3dp"
+            android:layout_width = "match_parent"
+            android:background = "@drawable/roundlayout"
+            android:layout_marginTop = "10dp"
+            ></LinearLayout>
+
+        <TextView
+            android:text = "View All"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "15sp"
+            android:gravity = "right"
+            android:layout_marginTop = "10dp"
+            android:textColor = "#0a0a0a"
+            android:textStyle = "bold"
+            />
+    </LinearLayout>
+    <!--my orders section ends here-->
+
+    <!--my wallet strips section starts from here-->
+    <LinearLayout
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundstrip"
+        android:padding = "10dp"
+        android:layout_marginTop = "10dp"
+        >
+        <TextView
+            android:text = "My Wallet and Cards"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "20sp"
+            />
+        <LinearLayout
+            android:layout_height = "3dp"
+            android:layout_width = "match_parent"
+            android:background = "@drawable/roundlayout"
+            android:layout_marginTop = "10dp"
+            ></LinearLayout>
+
+        <TextView
+            android:text = "View All"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "15sp"
+            android:gravity = "right"
+            android:layout_marginTop = "10dp"
+            android:textColor = "#0a0a0a"
+            android:textStyle = "bold"
+            />
+    </LinearLayout>
+    <!--my wallet and cards section ends here-->
+
+    <!--my account details strips section starts from here-->
+    <LinearLayout
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundstrip"
+        android:padding = "10dp"
+        android:layout_marginTop = "10dp"
+        >
+        <TextView
+            android:text = "My Account"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "20sp"
+            />
+        <LinearLayout
+            android:layout_height = "3dp"
+            android:layout_width = "match_parent"
+            android:background = "@drawable/roundlayout"
+            android:layout_marginTop = "10dp"
+            ></LinearLayout>
+
+        <TextView
+            android:text = "View Details"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "15sp"
+            android:gravity = "right"
+            android:layout_marginTop = "10dp"
+            android:textColor = "#0a0a0a"
+            android:textStyle = "bold"
+            />
+    </LinearLayout>
+    <!--my accounts strips section ends here-->
+
+    <!--Track your order strips section starts from here-->
+    <LinearLayout
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        android:background = "@drawable/roundstrip"
+        android:padding = "10dp"
+        android:layout_marginTop = "10dp"
+        >
+        <TextView
+            android:text = "Track Your Order"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "20sp"
+            />
+        <LinearLayout
+            android:layout_height = "3dp"
+            android:layout_width = "match_parent"
+            android:background = "@drawable/roundlayout"
+            android:layout_marginTop = "10dp"
+            ></LinearLayout>
+
+        <TextView
+            android:text = "Track Now"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize = "15sp"
+            android:gravity = "right"
+            android:layout_marginTop = "10dp"
+            android:textColor = "#0a0a0a"
+            android:textStyle = "bold"
+            />
+    </LinearLayout>
+    <!--Track your order strips section ends here-->
+</LinearLayout>
